@@ -39,14 +39,14 @@ int main(void) {
   }
 }
 float mc_pi(int n) {
-  float x,y,d;
+  float a,b,p;
   int count=0;
   for(int i=0;i<=n;i++) {
-    x = frandom();
-    y = frandom();
-    d = pow((x*x*+y*y),0.5);
+    a = frandom();
+    b = frandom();
+    p = pow((a*a*+b*b),0.5);
     
-   if(d<=1) {
+   if(p<=1) {
    count++;
    }
   }
