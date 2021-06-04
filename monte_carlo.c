@@ -44,7 +44,7 @@ float mc_pi(int n) {
   for(int i=0;i<=n;i++) {
     d = frandom();
     e = frandom();
-    p = pow((a*a*+b*b),0.5);
+    p = pow((d*d*+e*e),0.5);
     
    if(p<=1) {
    count++;
