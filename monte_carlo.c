@@ -39,18 +39,17 @@ int main(void) {
   }
 }
 float mc_pi(int n) {
-  float d,e,p;
-  int count=0;
-  for(int i=0;i<=n;i++) {
-    d = frandom();
-    e = frandom();
-    p = pow((d*d*+e*e),0.5);
-    
-   if(p<=1) {
-   count++;
-   }
+  int cir=0;
+  for(int i=0;i<=n;i++)
+  {  
+    float u=frandom();
+    float v=frandom();
+    float dis=sqrt((float)(u*v)+(v*v));
+    if(dis<=1)
+      cir=cir+1;
   }
-  return(4.0*count/n);
+  float j=4*((float)cir/(float)n);
+  return j;
 }
 
 
